@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="hy">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Հրահանգներ</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 20px 0;
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            background: linear-gradient(180deg, #c9ecff 0%, #e6f6ff 100%);
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            display: none; 
+        }
+        .header-text {
+            text-align: center;
+            padding: 10px 20px;
+            font-size: 14px;
+            color: #333;
+            margin-bottom: 10px;
+        }
+        /* Стили плашки: теперь это ссылка, убрано подчеркивание текста */
+        .link-box {
+            background: #f4f4f4;
+            border: 2px solid #333;
+            border-radius: 8px;
+            padding: 12px 15px;
+            width: 85%;
+            max-width: 400px;
+            margin-bottom: 20px;
+            display: flex;
+            align-items: center;
+            box-shadow: 0px 2px 5px rgba(0,0,0,0.1);
+            text-decoration: none; 
+            color: inherit; 
+            cursor: pointer;
+        }
+        .link-box-text {
+            margin-left: 15px;
+        }
+        .link-box-text strong { display: block; font-size: 15px; color: #111; }
+        .link-box-text span { font-size: 12px; color: #666; }
+        
+        .card {
+            background: white;
+            border-radius: 20px;
+            width: 90%;
+            max-width: 420px;
+            padding: 30px 20px;
+            box-sizing: border-box;
+            text-align: center;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+        }
+        .step-title {
+            font-weight: 900;
+            font-size: 16px;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .mockup {
+            border: 1px solid #eee;
+            border-radius: 16px;
+            padding: 15px;
+            margin-bottom: 20px;
+            position: relative;
+            background: #fff;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.02);
+        }
+        .mockup-text {
+            font-size: 26px;
+            font-weight: 800;
+            color: #2a256a;
+            text-align: center;
+            margin: 30px 0;
+            line-height: 1.2;
+        }
+        .menu-item {
+            display: flex;
+            align-items: center;
+            padding: 15px 10px;
+            border-bottom: 1px solid #f0f0f0;
+            font-size: 15px;
+            text-align: left;
+            font-weight: 500;
+            position: relative; /* Для позиционирования стрелочки внутри пункта */
+        }
+        .menu-item:last-child { border-bottom: none; }
+        .icon { width: 24px; text-align: center; margin-right: 15px; font-size: 18px; }
+        
+        .blue-arrow-up {
+            position: absolute; right: 15px; top: 40px; 
+            color: #005ae0; font-size: 40px; font-weight: bold; transform: rotate(-20deg);
+        }
+        /* Одиночная стрелочка, отцентрованная по вертикали */
+        .blue-arrow-left {
+            position: absolute; 
+            right: 15px; 
+            top: 50%;
+            transform: translateY(-50%);
+            color: #005ae0; 
+            font-size: 35px; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body id="main-content">
+
+    <div class="header-text">
+        ❌ Հղումը չի՞ բացվում։ Պատճենեք այն և բացեք ձեր դիտարկիչում։ ✅
+    </div>
+
+    <!-- Кнопка обернута в тег <a> с вашей ссылкой -->
+    <a href="https://1win.com/casino/list?open=register&amp;p=gx6e" class="link-box">
+        <div style="font-size: 24px;">🚀</div>
+        <div class="link-box-text">
+            <strong>Սեղմեք այստեղ՝ խաղալու համար</strong>
+            <span>Փնտրեք «Falling Pickaxe» խաղը</span>
+        </div>
+    </a>
+
+    <div class="card">
+        <div class="step-title">1. Սեղմեք վերևի աջ անկյունում<br>գտնվող երեք կետերին</div>
+        
+        <div class="mockup">
+            <div style="display: flex; justify-content: space-between; align-items: center; font-weight: bold;">
+                <span style="font-size: 18px; color: #000;">&lt; &nbsp; &times;</span>
+                <span style="font-size: 16px;">Խումբ</span>
+                <span style="font-size: 22px; letter-spacing: 2px;">&middot;&middot;&middot;</span>
+            </div>
+            <div class="blue-arrow-up">&#8599;</div>
+            <div class="mockup-text">Չե՞ք կարողանում<br>բացել խաղը։</div>
+        </div>
+
+        <div style="color: #ddd; font-size: 30px; margin-bottom: 15px;">&bull; &bull; &bull;</div>
+
+        <div class="step-title">2. Ընտրեք «Բացել<br>դիտարկիչում»</div>
+
+        <div class="mockup" style="text-align: left; padding: 5px 15px;">
+            <div class="menu-item">
+                <span class="icon">&#9873;</span> Հաղորդել խախտման մասին
+            </div>
+            <div class="menu-item">
+                <span class="icon">&#129517;</span> Բացել դիտարկիչում
+                <!-- Оставлена ровно одна стрелка влево -->
+                <div class="blue-arrow-left">&#8592;</div>
+            </div>
+            <div class="menu-item">
+                <span class="icon">&#128279;</span> Պատճենել հղումը
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const targetUrl = "https://1win.com/casino/list?open=register&p=gx6e";
+        const ua = navigator.userAgent || navigator.vendor || window.opera;
+        const isTikTok = (ua.indexOf("TikTok") > -1) || (ua.indexOf("Bytedance") > -1) || (ua.indexOf("BytedanceWebview") > -1);
+        
+        if (isTikTok) {
+            document.getElementById("main-content").style.display = "flex";
+        } else {
+            window.location.replace(targetUrl);
+        }
+    </script>
+
+</body>
+</html>
